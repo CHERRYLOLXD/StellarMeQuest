@@ -23,6 +23,14 @@ window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 window/handheld/orientation=6
 
+[dotnet]
+
+project/assembly_name="Stellar me quest"
+
+[filesystem]
+
+import/blender/enabled=false
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

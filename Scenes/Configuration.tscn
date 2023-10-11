@@ -28,7 +28,7 @@ layout_mode = 2
 theme_override_constants/separation = 5
 alignment = 2
 
-[node name="EnableSettings" type="CheckButton" parent="MarginContainer/VBoxContainer"]
+[node name="EnableConfiguration" type="CheckButton" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Включить настройки"
 
@@ -37,4 +37,5 @@ layout_mode = 2
 text = "Закрыть настройки"
 
 [connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/EnableConfiguration" to="." method="_on_enable_configuration_toggled"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/CloseConfiguration" to="." method="_on_close_configuration_pressed"]
